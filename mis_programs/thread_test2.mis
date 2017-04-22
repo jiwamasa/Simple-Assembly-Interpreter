@@ -1,0 +1,15 @@
+THREAD_BEGIN
+OUT "thread1\n"
+OUT "thread1\n"
+OUT "thread1\n"
+OUT "thread1\n"
+OUT "thread1\n"
+THREAD_END
+
+THREAD_BEGIN
+OUT "thread2\n"
+OUT "thread2\n"
+OUT "thread2\n"
+OUT "thread2\n"
+OUT "thread2\n"
+THREAD_END

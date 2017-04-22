@@ -1,0 +1,24 @@
+# executables
+MIS_server
+MIS_client
+*.exe
+a.out
+
+# output files
+*.out
+*.err
+Makefile.dep
+*.stackdump
+
+# C++
+*.o
+
+# vim
+*.swp
+
+# Visual Paradigm
+*.bak*
+
+# emacs tmp files
+\#*\#
+*~

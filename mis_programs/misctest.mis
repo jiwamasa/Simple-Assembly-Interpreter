@@ -1,0 +1,9 @@
+VAR $timea,NUMERIC,5
+VAR $timeb,REAL,3.3
+
+OUT "wait 5 seconds...\n"
+SLEEP $timea
+OUT "wait 3 seconds...\n"
+SLEEP $timeb
+OUT "assigning numeric to real...\n"
+ASSIGN $timeb, $timea

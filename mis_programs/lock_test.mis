@@ -1,0 +1,11 @@
+VAR $num,NUMERIC,0
+
+THREAD_BEGIN
+LOCK $num
+ADD $num,$num,1
+SLEEP 5
+UNLOCK $num
+THREAD_END
+
+SLEEP 1
+OUT $num,"\n"

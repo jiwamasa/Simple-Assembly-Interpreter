@@ -1,0 +1,21 @@
+James Iwamasa - jiwamasa
+Sean Wakasa - swakasa
+Jeffrey Zheng - jzheng13
+
+CS109 MIS Project
+
+To install, in directory jzheng13/hw4/, run
+  make
+
+To run the program, usage:
+  On the server computer: 
+    MIS_server [address] port 
+      [address]: The address the server should listen on. If none specified, listens on all available.
+	  port: The port the server should listen on. 
+
+  Once the server is running, on the client computer: 
+    MIS_client [-f] address port filename
+      address: address of the server you wish to connect to
+      port: the port of the server you wish to connect to
+	  filename: name of the mis program file (must be of form “filename.mis”)
+      [-f] option: since we need to send programs over the network, and output is printed to files, by default, program length and instruction execution count is limited. The -f flag removes this limit.  

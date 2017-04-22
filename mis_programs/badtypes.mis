@@ -1,0 +1,5 @@
+VAR $a,STRING,"foo"
+VAR $b,STRING,"bar"
+VAR $c,STRING,"baz"
+
+ADD $a,$b,$c

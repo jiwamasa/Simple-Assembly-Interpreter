@@ -1,0 +1,5 @@
+VAR $a,NUMERIC,0
+
+OUT "divide by 0; should crash\n"
+DIV $a,5,0
+

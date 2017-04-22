@@ -1,0 +1,8 @@
+VAR $mystring,STRING,"this is a string"
+VAR $mychar,CHAR,'z'
+
+GET_STR_CHAR $mystring,3,$mychar
+OUT $mystring,"[3] = ",$mychar,"\n"
+SET_STR_CHAR $mystring,3,'z'
+OUT $mystring,"\n"
+ADD 5, 3, 2

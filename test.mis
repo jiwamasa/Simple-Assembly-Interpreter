@@ -1,0 +1,8 @@
+VAR $myint,NUMERIC,100
+VAR $mystring,STRING,"foo"
+VAR $mychar,CHAR,'c'
+          
+VAR $myreal,REAL,5.6
+
+LABEL loopa
+LABEL loopb

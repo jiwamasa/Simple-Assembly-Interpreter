@@ -1,0 +1,13 @@
+VAR $num,NUMERIC,5
+VAR $flo,REAL,1.1
+VAR $chr,CHAR,'a'
+VAR $str,STRING,"foobar"
+
+LABEL LOOPA
+OUT $num,"\n"
+SUB $num,$num,1
+LABEL LOOPB
+OUT $num,"\n"
+JMPZ LOOPA,$num
+ADD $num,$num,2
+JMPLTE LOOPB,$num,10

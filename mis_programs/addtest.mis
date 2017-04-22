@@ -1,0 +1,3 @@
+VAR $myint,NUMERIC,5
+
+ADD $myint,4,5

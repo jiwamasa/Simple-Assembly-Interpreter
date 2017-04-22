@@ -1,0 +1,10 @@
+VAR $result,NUMERIC,1
+VAR $start,NUMERIC,7
+VAR $curr,NUMERIC,7
+
+LABEL LOOP
+      MUL $result,$result,$curr
+      SUB $curr,$curr,1
+JMPGT LOOP,$curr,1
+
+OUT $start,"! = ",$result,"\n"

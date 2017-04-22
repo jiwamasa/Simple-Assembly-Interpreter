@@ -1,0 +1,7 @@
+VAR $stringa,STRING,10,"foo"
+VAR $stringb,STRING,"bar"
+VAR $stringc,STRING,"baz","qux"
+
+OUT $stringa," ",$stringb,"\n"
+SET_STR_CHAR $stringa,2,'z'
+OUT $stringa," ",$stringb,"\n"

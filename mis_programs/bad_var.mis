@@ -1,0 +1,3 @@
+VAR $copy,STRING,"foo"
+VAR $copy,REAL,4.2
+

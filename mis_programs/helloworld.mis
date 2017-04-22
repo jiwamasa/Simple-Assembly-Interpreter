@@ -1,0 +1,19 @@
+VAR $hello,STRING, "Hello, world!"
+VAR $count,NUMERIC,0
+VAR $tmp,NUMERIC,0
+VAR $pi,REAL,3.14159
+VAR $chra,CHAR,'a'
+VAR $chrb,CHAR,'b'
+
+LABEL LOOP
+      OUT $count," ",$hello," ",$pi,"\n"
+      MUL $pi,$pi,2.718
+
+      GET_STR_CHAR $hello,$count,$chra
+      SUB $tmp,12,$count
+      GET_STR_CHAR $hello,$tmp,$chrb
+      SET_STR_CHAR $hello,$count,$chrb
+      SET_STR_CHAR $hello,$tmp,$chra
+
+      ADD $count,$count,1
+JMPLT LOOP,$count,12

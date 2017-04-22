@@ -1,0 +1,23 @@
+VAR $count1,NUMERIC,0
+VAR $count2,NUMERIC,0
+
+OUT "thread testing\n"
+
+THREAD_BEGIN
+  OUT "thread 1 start\n"
+  LABEL LOOPA
+    OUT "thread1\n"
+    ADD $count1,$count1,1
+    SLEEP 1
+  JMPLT LOOPA,$count1,10
+THREAD_END
+
+THREAD_BEGIN
+  OUT "thread 2 start\n"
+  LABEL LOOPB
+    OUT "thread2\n"
+    ADD $count2,$count2,1
+    SLEEP 1
+  JMPLT LOOPB,$count2,10
+THREAD_END
+

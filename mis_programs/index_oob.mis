@@ -1,0 +1,3 @@
+VAR $str,STRING,"foobar"
+
+SET_STR_CHAR $str,10,'z'

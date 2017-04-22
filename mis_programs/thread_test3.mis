@@ -1,0 +1,8 @@
+VAR $num,NUMERIC,1
+
+OUT "test0:",$num,"\n"
+THREAD_BEGIN
+SLEEP 5
+ADD $num,$num,1
+THREAD_END
+OUT "test2:",$num,"\n"
